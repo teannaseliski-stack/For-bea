@@ -1,4 +1,4 @@
-# For-bea<!doctype html>
+# For-bea
 <html lang="en">
 <head>
 <meta charset="utf-8" />
