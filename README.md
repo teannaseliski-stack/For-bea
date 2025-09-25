@@ -97,6 +97,7 @@
     opacity:0;
     transform: translateY(18px) scale(.995);
     transition: opacity 600ms ease, transform 600ms cubic-bezier(.2,.9,.3,1);
+    white-space:pre-wrap;
   }
 
   .letter.visible{
@@ -105,7 +106,7 @@
   }
 
   .letter h2{margin:0 0 12px 0;font-size:20px;color:var(--accent)}
-  .letter p{margin:0 0 12px 0;color:#dfe9f3;line-height:1.5}
+  .letter p{margin:0 0 12px 0;color:#dfe9f3;line-height:1.6}
   .small{font-size:13px;color:var(--muted);margin-top:8px}
 
   .actions{margin-top:18px;display:flex;gap:12px}
@@ -127,7 +128,7 @@
 <body>
 <div class="container" role="main" aria-labelledby="main-title">
   <div class="left">
-    <h1 class="title" id="main-title">To Bea</h1>
+    <h1 class="title" id="main-title">For Bea</h1>
     <p class="subtitle">Open the envelope when you're ready. No rush — just press it gently.</p>
 
     <div class="envelope" id="envelope" title="Open letter">
@@ -142,9 +143,14 @@
     <div class="letter" id="letter">
       <h2>Dear Bea,</h2>
       <p id="letter-text">
-        <!-- Put your letter here. Replace the text below with your real message. -->
-        I just want to be honest about something I’ve been keeping since last school year — I like you, Bea.
-        Gikan pa sa duty nato. I don't know when it started but I realized it in the little moments: when you told stories, when you laughed softly, when you cared for other people in ways that only you can.
+Hi Bea,
+
+I just want to be honest about something I’ve been keeping since last school year. I like you, Bea! Gikan pa sa duty nato. I don’t know where or when it started, but I just realized it from the moment na nailang nako every time you showed up. I love listening to you when you share your stories and even your random thoughts. I like how you care for others, even in a silent way. I love how you cherish the people that surround you and support you.
+
+To be honest, when you asked kun I like girls, I also questioned myself if I do like girls or if it was just because of influence from my friends. But when I see you and talk to you, ahhh ikaw diay you’re the only exception. I know you like men, this is the reason why I distanced myself, because I didn’t want to make things awkward between you and me. I also like men, but when I see you, you’re different. 
+I feel different.
+
+I always listen to “The Only Exception” by Paramore and it always reminds me of you, Bee. I like you, Bee. I don’t want to put pressure on you or make you feel any urgency to respond to my message. That’s not what I want, because this message is just to tell you that I like you. I’m sorry if I ever did something that made you feel uncomfortable. I hope this message will stay just between us, because I will keep this at the bottom of my heart. This is my first-ever confession. I hope you understand if makulbaan ko when I see you after this message hehe. Anyway see you around, Bee!
       </p>
 
       <p class="small">— From someone who thinks you're wonderful</p>
@@ -206,9 +212,6 @@
   // Small accessibility: allow Enter key to open when envelope focused
   envelope.tabIndex = 0;
   envelope.addEventListener('keydown', (e)=>{ if(e.key === 'Enter') openLetter(); });
-
-  // Replace placeholder text with something personalized (optional)
-  // document.getElementById('letter-text').textContent = "Your letter here...";
 </script>
 </body>
 </html>
